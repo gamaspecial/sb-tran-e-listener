@@ -18,6 +18,16 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework:spring-tx'
+	implementation 'org.projectlombok:lombok:1.18.22'
+
+	// HikariCP
+	implementation 'com.zaxxer:HikariCP'
+
+	// H2 Database
+	testImplementation 'com.h2database:h2'
+
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
