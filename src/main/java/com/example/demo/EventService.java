@@ -17,7 +17,7 @@ public class EventService {
   private ApplicationEventPublisher applicationEventPublisher;
 
   public void doSomething() {
-    applicationEventPublisher.publishEvent(new Event(this, "Hello"));
+    applicationEventPublisher.publishEvent(new Event("Hello"));
     System.out.println("doSomething!!");
   }
 }

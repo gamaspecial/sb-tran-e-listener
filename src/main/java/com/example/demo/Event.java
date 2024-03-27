@@ -1,16 +1,15 @@
 package com.example.demo;
 
-import org.springframework.context.ApplicationEvent;
+public class Event {
 
-public class Event extends ApplicationEvent {
-    private String message;
+  private String message;
 
-    public Event(Object source, String message) {
-      super(source);
-      this.message = message;
-    }
-
-    public String getMessage() {
-      return message;
-    }
+  public Event(String message) {
+    this.message = message;
   }
+
+  public String getMessage() {
+    return message;
+  }
+}
+
