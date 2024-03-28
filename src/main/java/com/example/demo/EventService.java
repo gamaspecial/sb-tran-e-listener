@@ -1,7 +1,5 @@
 package com.example.demo;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,11 +11,8 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class EventService {
 
-  @Autowired
-  private ApplicationEventPublisher applicationEventPublisher;
-
   public void doSomething() {
-    applicationEventPublisher.publishEvent(new Event("Hello"));
+    DomainEventPublisher.publish(new Event("Hello"));
     System.out.println("doSomething!!");
   }
 }

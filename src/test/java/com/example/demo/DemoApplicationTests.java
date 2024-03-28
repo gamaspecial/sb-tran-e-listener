@@ -13,7 +13,6 @@ class EventServiceTests {
   @Autowired
   private EventService eventService;
 
-
   @Test
   @Transactional
   void イベントの遅延発火てすとだよ() {

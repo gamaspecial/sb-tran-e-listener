@@ -1,6 +1,6 @@
 package com.example.demo;
 
-public class Event {
+public class Event extends DomainEventBase {
 
   private String message;
 
