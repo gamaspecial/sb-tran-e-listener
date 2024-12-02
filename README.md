@@ -1,2 +1,1 @@
-> doSomething!!  
-> Hello TransactionEventListener!!
+`TransactionEventListener`でのイベント駆動とトランザクションの統合のサンプル
